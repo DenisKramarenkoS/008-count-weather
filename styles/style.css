@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "sf";
+  src: url(../assets/fonts/SF-Pro-Display-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sf";
+  src: url(../assets/fonts/SF-Pro-Display-Black.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: "sf";
+  background-color: #1b1b1b;
+  color: #ffc300;
+  height: 100vh;
+}
+
+.wrap {
+  position: relative;
+  max-width: 1280px;
+  padding-top: 10px;
+  margin-inline: auto;
+  padding-inline: 10px;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.h1 {
+  width: fit-content;
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.weather {
+  background-color: #242424;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 800px;
+  height: 800px;
+  border-radius: 20px;
+  transform: translate(50%, -50%);
+  gap: 10px;
+  overflow-x: scroll;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.weather__card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.weather__header {
+  margin-top: 20px;
+}
+
+.weather__img {
+  background: linear-gradient(#535353, transparent 99%);
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+}
+
+.weather__info {
+  font-size: 3rem;
+  transform: translateY(-40px);
+  text-align: center;
+}
+
+.weather__info__mode {
+  font-size: 2rem;
+}
